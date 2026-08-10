@@ -1,0 +1,7 @@
+# Marketplace Monitoring weekly report — Python dependencies
+playwright>=1.40      # headless browser that drives the dashboard + captures charts
+pillow>=10.0          # image cropping of the captured charts
+pymupdf>=1.23         # PDF rasterization / verification (imported as: import fitz)
+
+# After installing, run once to fetch the capture browser:
+#   python -m playwright install chromium
