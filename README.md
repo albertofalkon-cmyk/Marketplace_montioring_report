@@ -12,15 +12,13 @@ Automated weekly report for Insurify's ad marketplace, produced separately for e
 | `requirements.txt` | Python dependencies. |
 | `work/` | Generated outputs (screenshots, PDFs, per-week analysis JSON). Git-ignored. |
 
-## Two layers
+## Workflow
 **1. The pipeline**: Captures the real dashboard charts and builds the PDF. Runs on its own (no Claude, no connectors needed).
 
 **2. The full automated loop.** Adds the analyst interpretation (which charts + the written narrative), posting to Notion, the Slack notification, and the Monday schedule. This part runs inside **Claude Code** with the Notion/Slack connectors and a scheduled task; `RUNNER.md` documents it end-to-end.
 
 ## Prerequisites
-- **macOS** with **Google Chrome** installed (used to print the PDF).
-- **Python 3.10+**.
-- The Marketplace Monitoring dashboard **shareable link** (already set as `URL` in `weekly_report.py`) — an anonymous viewer can recompute it, so no login/token is required for the capture.
+- The Marketplace Monitoring dashboard **shareable link** (set as `URL` in `weekly_report.py`, no login/token is required for the capture).
 
 ## Setup
 ```bash
