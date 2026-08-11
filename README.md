@@ -1,6 +1,6 @@
 # Marketplace Monitoring — Weekly Report
 
-Automated weekly report for Insurify's ad marketplace, produced separately for each vertical (**Auto** and **Home**). Each Tuesday it recomputes last week's numbers from the Marketplace Monitoring dashboard in Hex, an analyst step interprets them and selects the charts that best explain *that* week, and a polished PDF is generated and posted to Notion + Slack.
+Automated weekly report for Insurify's ad marketplace, produced separately for each vertical (**Auto** and **Home**). Each Tuesday it recomputes last week's numbers from the Marketplace Monitoring dashboard in Hex, an analyst step interprets them and selects the charts that best explain that week, and a polished PDF is generated and posted to Notion + Slack.
 
 ## What's in here
 | File | Purpose |
