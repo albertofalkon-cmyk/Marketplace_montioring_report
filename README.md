@@ -23,9 +23,9 @@ Automated weekly report for Insurify's ad marketplace, produced separately for e
 ## Setup
 ```bash
 cd marketplace_monitoring_report
-python -m venv .venv && source .venv/bin/activate     # optional but recommended
+python -m venv .venv && source .venv/bin/activate    
 pip install -r requirements.txt
-python -m playwright install chromium                  # one-time: capture browser
+python -m playwright install chromium                  # capture browser
 ```
 
 ## Run the pipeline
@@ -40,11 +40,9 @@ python weekly_report.py --vertical auto --end 2026-05-18 --lookback 7
 ### Interpretive vs. templated output
 If `work/analysis_<vertical>_<end>.json` exists, the report uses that week's **curated** narrative, chart selection, and KPI color-groups (see `report-interpretation-framework.md`). Without it, the pipeline still produces a real report with the real charts but a **templated** summary. In the full loop, Claude Code writes that JSON each week per the framework.
 
-## The full automated loop
-See `RUNNER.md`. In short, for each vertical: capture → have the analyst write `analysis_<vertical>_<end>.json` per the framework → rebuild → upload the PDF to the Notion "Weekly Reports" page (as a per-week dropdown, Auto + Home nested) → send a Slack summary. It runs Mondays via a Claude Code scheduled task.
 
-## Notes for teammates
-- The dashboard link is the **Testing copy** (anonymous recompute, no login). Keep this repo **private**.
-- The **Chrome path** in `weekly_report.py` is the standard macOS location; adjust if yours differs.
-- `RUNNER.md` references the **current owner's** Notion page id and Slack recipient — replace those with your own targets when you run it.
+## Notes for Alberto and next steps
+- The dashboard link is the **Testing copy** (anonymous recompute, no login). Don't forget to change to the original one. 
+- `RUNNER.md` references the **Alberto's** Notion page id and Slack recipient — replace those with your own targets when you run it.
 - Reports are **draft-first** to a private Notion page during validation, before sharing more widely.
+- Change the **Hex's API Key** to an non-expiring one. 
