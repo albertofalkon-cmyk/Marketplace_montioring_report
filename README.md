@@ -5,10 +5,10 @@ Automated weekly report for Insurify's ad marketplace, produced separately for e
 ## What's in here
 | File | Purpose |
 |---|---|
-| `weekly_report.py` | The pipeline — drives the dashboard in a headless browser, captures the real charts, scrapes the KPI tiles, and builds the PDF. |
+| `weekly_report.py` | The pipeline: drives the dashboard in a headless browser, captures the real charts, scrapes the KPI tiles, and builds the PDF. |
 | `report_gen.py` | Report layout helpers (color-grouped KPI grid, moves bar, page assembly). |
-| `RUNNER.md` | The weekly runbook — the exact steps the Monday automation follows (capture → interpret → build → post to Notion → Slack). |
-| `report-interpretation-framework.md` | How the analysis is done — revenue decomposition, chart-selection rules, exec-summary tone, and the color-grouping scheme. |
+| `RUNNER.md` | The weekly runbook: the exact steps the Monday automation follows (capture → interpret → build → post to Notion → Slack). |
+| `report-interpretation-framework.md` | How the analysis is done: revenue decomposition, chart-selection rules, exec-summary tone, and the color-grouping scheme. |
 | `requirements.txt` | Python dependencies. |
 | `work/` | Generated outputs (screenshots, PDFs, per-week analysis JSON). Git-ignored. |
 
