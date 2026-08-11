@@ -10,7 +10,7 @@ Automated weekly report for Insurify's ad marketplace, produced separately for e
 | `RUNNER.md` | The weekly runbook: the exact steps the Monday automation follows (capture → interpret → build → post to Notion → Slack). |
 | `report-interpretation-framework.md` | How the analysis is done: revenue decomposition, chart-selection rules, exec-summary tone, and the color-grouping scheme. |
 | `requirements.txt` | Python dependencies. |
-| `work/` | Generated outputs (screenshots, PDFs, per-week analysis JSON). Git-ignored. |
+| `work/` | Generated outputs (screenshots, PDFs, per-week analysis JSON). |
 
 ## Workflow
 **1. The pipeline**: Captures the real dashboard charts and builds the PDF. Runs on its own (no Claude, no connectors needed).
