@@ -41,7 +41,7 @@ python weekly_report.py --vertical auto --end 2026-05-18 --lookback 7
 If `work/analysis_<vertical>_<end>.json` exists, the report uses that week's **curated** narrative, chart selection, and KPI color-groups (see `report-interpretation-framework.md`). Without it, the pipeline still produces a real report with the real charts but a **templated** summary. In the full loop, Claude Code writes that JSON each week per the framework.
 
 
-## Notes for Alberto and next steps
+## Notes for Alberto and Next Steps
 - The dashboard link is the **Testing copy** (anonymous recompute, no login). Don't forget to change to the original one. 
 - `RUNNER.md` references the **Alberto's** Notion page id and Slack recipient — replace those with your own targets when you run it.
 - Reports are **draft-first** to a private Notion page during validation, before sharing more widely.
