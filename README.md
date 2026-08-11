@@ -13,7 +13,7 @@ Automated weekly report for Insurify's ad marketplace, produced separately for e
 | `work/` | Generated outputs (screenshots, PDFs, per-week analysis JSON). Git-ignored. |
 
 ## Two layers
-**1. The pipeline.**: Captures the real dashboard charts and builds the PDF. Runs on its own (no Claude, no connectors needed).
+**1. The pipeline**: Captures the real dashboard charts and builds the PDF. Runs on its own (no Claude, no connectors needed).
 
 **2. The full automated loop.** Adds the analyst interpretation (which charts + the written narrative), posting to Notion, the Slack notification, and the Monday schedule. This part runs inside **Claude Code** with the Notion/Slack connectors and a scheduled task; `RUNNER.md` documents it end-to-end.
 
